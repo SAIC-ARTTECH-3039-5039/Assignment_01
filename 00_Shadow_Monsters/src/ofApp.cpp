@@ -93,10 +93,11 @@ void ofApp::draw()
         //
         //     This approach will require that you calculate each of the exact
         //     points with which to draw. (i.e. for a triangle you need to know
-        //     know three points, the two bases on th contour and the apex / tip).
+        //     know three points, the two bases on the contour and the apex / tip).
         //
-        //     The triangle should connect to the vertex that was skipped and
-        //     a normal point above the current vertex.
+        //     Thus, the triangle might connect to the vertex that was skipped
+        //     (one base), current vertex (another base) and a normal point
+        //     above the current vertex (the apex).
         //
         //     Method 2:
         //     The second approach is to attach an existing shape or image to
