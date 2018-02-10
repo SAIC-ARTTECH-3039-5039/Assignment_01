@@ -71,22 +71,45 @@ void ofApp::draw()
 
 /////////////////////////// YOUR WORK AREA /////////////////////////////////////
         // Implement the following pseudocode:
-        
+
         // For every other vertex in the contour ...
         //
-        // ... if the curvature at that vertex is > 0 and < 0.02
+        // ... if the curvature at that vertex is > 0 and < 0.02 (you may need
+        //     to modify these values to get something that looks good to you)
         //
         // ... draw a triangle on that is rotated to match the orientation
-        //     of the contour (see 06_polyline_orient_images) for example.
-        //
-        //     The triangle should connect to the vertex that was skipped and
-        //     a normal point above the current vertex.
+        //     of the contour.
         //
         //     These might ultimately look like the sharp spines on the back of
         //     a reptile.
         //
+        //     For one possible look, see the README.md file / and spines.png.
+        //
+        //     There several ways to approach this.
+        //
+        //     Method 1:
+        //     One is to construct the spines using lines / shapes (e.g. ofPath,
+        //     ofTriangle, ofPolyline).
+        //
+        //     This approach will require that you calculate each of the exact
+        //     points with which to draw. (i.e. for a triangle you need to know
+        //     know three points, the two bases on th contour and the apex / tip).
+        //
+        //     The triangle should connect to the vertex that was skipped and
+        //     a normal point above the current vertex.
+        //
+        //     Method 2:
+        //     The second approach is to attach an existing shape or image to
+        //     contour.  For instance if you wanted to create images of spines
+        //     and attach them.  Or if you drew a collection of shapes from
+        //     ofPath.  This is the approach taken in the
+        //     06_polyline_orient_images example.
+        //
         //     Bonus: The height of the triangle should be scaled based on the
         //     curvature at that vertex. (see 03_polyline_curves for more).
+        //
+        //     Bonus: Vary the look, shape, spacing, etc of the spines to vary
+        //     based on other factors of your choice.
 
 /////////////////////////// YOUR WORK AREA END /////////////////////////////////
 

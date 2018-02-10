@@ -1,3 +1,6 @@
+![Spines!](spines.png "Spines")
+_Spines_
+
 ## Set up your Assignment
 
 1.  Get the required addons:
